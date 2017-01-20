@@ -6,7 +6,7 @@ let ProgressBar = require('progressbar.js');
 
     let circleHeader = document.getElementById('container');
     let bar = new ProgressBar.Circle(circleHeader, {
-    color: '#aaa',
+    color: '#5E1533',
     
     // This has to be the same size as the maximum width to
     // prevent clipping
@@ -17,8 +17,8 @@ let ProgressBar = require('progressbar.js');
     text: {
         autoStyleContainer: false
     },
-    from: { color: '#aaa', width: 1 },
-    to: { color: '#333', width: 4 },
+    from: { color: '#d7c6d1', width: 1 },
+    to: { color: '#5E1533', width: 4 },
 
     // Set default step function for all animate calls
     step: function(state, circle) {

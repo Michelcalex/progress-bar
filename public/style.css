@@ -1253,6 +1253,9 @@ button {
       .column-block > :last-child {
         margin-bottom: 0; } }
 
+.hidden {
+  display: none; }
+
 li {
   list-style: none; }
 
@@ -1286,7 +1289,8 @@ body main {
     border: 1px solid #5E1533;
     border-radius: 5px;
     max-width: 50%;
-    margin: 2% auto; }
+    margin: 2% auto;
+    padding: 20px; }
   body main #hero {
     max-width: 75rem;
     margin-right: auto;
@@ -1303,14 +1307,11 @@ body main {
       clear: both; }
     body main #hero h2 {
       font-style: italic;
-      color: #fff;
-      box-shadow: 10px 10px 5px #888888; }
-
-#container {
-  margin: auto;
-  width: 200px;
-  height: 200px;
-  position: relative; }
-
-.hidden {
-  display: none; }
+      color: #fff; }
+    body main #hero #container {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      position: relative; }
+  body main #vocab li span {
+    font-weight: bold; }
