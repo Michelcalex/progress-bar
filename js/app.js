@@ -1,10 +1,12 @@
 console.log('ready');
 
-var ProgressBar = require('progressbar.js')
 
-    var circleHeader = document.getElementById('container');
-    var bar = new ProgressBar.Circle(circleHeader, {
+let ProgressBar = require('progressbar.js');
+
+    let circleHeader = document.getElementById('container');
+    let bar = new ProgressBar.Circle(circleHeader, {
     color: '#aaa',
+    
     // This has to be the same size as the maximum width to
     // prevent clipping
     strokeWidth: 4,
@@ -16,6 +18,7 @@ var ProgressBar = require('progressbar.js')
     },
     from: { color: '#aaa', width: 1 },
     to: { color: '#333', width: 4 },
+
     // Set default step function for all animate calls
     step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
@@ -35,7 +38,7 @@ var ProgressBar = require('progressbar.js')
 
     bar.animate(1.0);  // Number from 0.0 to 1.0
 
-    
+
     
     
     window.setInterval(function () {
@@ -50,4 +53,11 @@ var ProgressBar = require('progressbar.js')
 
         let vocabSection = document.getElementById('vocab');
         vocabSection.classList.remove('hidden');
+
     }, 2000);
+
+
+
+
+
+
