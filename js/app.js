@@ -35,6 +35,9 @@ var ProgressBar = require('progressbar.js')
 
     bar.animate(1.0);  // Number from 0.0 to 1.0
 
+    
+    
+    
     window.setInterval(function () {
         let progressContainer = document.getElementById('container');
         progressContainer.classList.add('hidden');
