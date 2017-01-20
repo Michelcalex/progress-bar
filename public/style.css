@@ -1313,5 +1313,17 @@ body main {
       width: 200px;
       height: 200px;
       position: relative; }
-  body main #vocab li span {
-    font-weight: bold; }
+  body main #vocab {
+    margin-bottom: 65px; }
+    body main #vocab li span {
+      font-weight: bold; }
+  body main footer {
+    background-color: #007964;
+    color: #fff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em; }

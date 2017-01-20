@@ -10,10 +10,10 @@ $header-txt-color: #fff;
 $header-text-font: 'Bungee Inline', cursive;
 
 $hero-bkgd-color: #B2D7C7;
+$footer-bkgd-color: #007964;
+
 
 $font-color-primary: #fff;
-
-
 $font-txt-primary: 'PT Sans Narrow', sans-serif;
 
 
@@ -95,10 +95,23 @@ body {
         }
 
         #vocab {
+            margin-bottom: 65px;
 
             li span {
                 font-weight: bold;
             }
+        }
+
+        footer {
+            background-color: $footer-bkgd-color;
+            color: $font-color-primary;
+            position:fixed;
+            left:0px;
+            bottom:0px;
+            height:40px;
+            width:100%;
+            text-align: center;
+            font-size: 0.8em;
         }
     }   
 }
