@@ -5,20 +5,85 @@
 @include foundation-grid;
 
 
-#container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
+$header-bkgd-color: #7A4266;
+$header-txt-color: #fff;
+$header-text-font: 'Bungee Inline', cursive;
 
-#demo-container {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
-  position: relative;
-}
+$hero-bkgd-color: #B2D7C7;
+
+$font-color-primary: #fff;
+
+
+$font-txt-primary: 'PT Sans Narrow', sans-serif;
+
+
 
 .hidden {
     display: none;
 }
+ 
+li {
+    list-style:none;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+body {
+    
+    header {
+        @include grid-row();
+        background-color: $header-bkgd-color;
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: $header-txt-color;
+
+
+        h1 {
+            font-family: $header-text-font;
+            font-weight: lighter;
+            color: $font-color-primary;
+        }
+    }
+
+    main {
+        font-family: $font-txt-primary;
+
+        .border {
+            border: 1px solid #5E1533;
+            border-radius: 5px;
+            max-width: 50%;
+            margin: 2% auto;
+        }
+    
+        #hero {
+            @include grid-row();
+            background-color: $hero-bkgd-color;
+            max-width: 100%;
+            text-align: center;
+            margin: auto;
+            padding: 40px 0px;
+
+            h2 {
+                font-style: italic;
+                color: $font-color-primary;
+            }
+
+            #container {
+                margin: auto;
+                width: 200px;
+                height: 200px;
+                position: relative;
+            }
+         
+        }
+    }   
+}
+
+
+

@@ -12,7 +12,7 @@ let ProgressBar = require('progressbar.js');
     strokeWidth: 4,
     trailWidth: 1,
     easing: 'easeInOut',
-    duration: 2000,
+    duration: 2500,
     text: {
         autoStyleContainer: false
     },
@@ -54,7 +54,7 @@ let ProgressBar = require('progressbar.js');
         let vocabSection = document.getElementById('vocab');
         vocabSection.classList.remove('hidden');
 
-    }, 2000);
+    }, 2500);
 
 
 
