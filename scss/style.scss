@@ -77,9 +77,12 @@ body {
 
             #container {
                 margin: auto;
-                width: 200px;
-                height: 200px;
-                position: relative;
+                background-color: white;
+
+                //*************CSS FOR CIRCLE PROGRESS BAR EXAMPLE FOR WHEN PAGE FIRST LOADS
+                // width: 200px;
+                // height: 200px;
+                // position: relative;
             }
          
         }

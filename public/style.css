@@ -1310,9 +1310,7 @@ body main {
       color: #fff; }
     body main #hero #container {
       margin: auto;
-      width: 200px;
-      height: 200px;
-      position: relative; }
+      background-color: white; }
   body main #vocab {
     margin-bottom: 65px; }
     body main #vocab li span {

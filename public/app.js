@@ -5,39 +5,48 @@ console.log('ready');
 let ProgressBar = require('progressbar.js');
 
     let circleHeader = document.getElementById('container');
-    let bar = new ProgressBar.Circle(circleHeader, {
-    color: '#5E1533',
+    // let bar = new ProgressBar.Circle(circleHeader, {
+    // color: '#5E1533',
     
-    // This has to be the same size as the maximum width to
-    // prevent clipping
-    strokeWidth: 4,
-    trailWidth: 1,
-    easing: 'easeInOut',
-    duration: 2500,
-    text: {
-        autoStyleContainer: false
-    },
-    from: { color: '#d7c6d1', width: 1 },
-    to: { color: '#5E1533', width: 4 },
+    // // This has to be the same size as the maximum width to
+    // // prevent clipping
+    // strokeWidth: 4,
+    // trailWidth: 1,
+    // easing: 'easeInOut',
+    // duration: 2500,
+    // text: {
+    //     autoStyleContainer: false
+    // },
+    // from: { color: '#d7c6d1', width: 1 },
+    // to: { color: '#5E1533', width: 4 },
 
-    // Set default step function for all animate calls
-    step: function(state, circle) {
-        circle.path.setAttribute('stroke', state.color);
-        circle.path.setAttribute('stroke-width', state.width);
+    // // Set default step function for all animate calls
+    // step: function(state, circle) {
+    //     circle.path.setAttribute('stroke', state.color);
+    //     circle.path.setAttribute('stroke-width', state.width);
 
-        var value = Math.round(circle.value() * 100);
-        if (value === 0) {
-        circle.setText('');
-        } else {
-        circle.setText(value);
-        }
+    //     var value = Math.round(circle.value() * 100);
+    //     if (value === 0) {
+    //     circle.setText('');
+    //     } else {
+    //     circle.setText(value);
+    //     }
 
-    }
+    // }
+    // });
+    // bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+    // bar.text.style.fontSize = '2rem';
+
+    // bar.animate(1.0);  // Number from 0.0 to 1.0
+
+    let logo = new ProgressBar.Path('.tiy-logo', {
+        easing: 'easeInOut',
+        duration: 15000
     });
-    bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-    bar.text.style.fontSize = '2rem';
 
-    bar.animate(1.0);  // Number from 0.0 to 1.0
+    logo.set(0);
+    logo.animate(0.5);
+
 
 
     
@@ -55,7 +64,7 @@ let ProgressBar = require('progressbar.js');
         let vocabSection = document.getElementById('vocab');
         vocabSection.classList.remove('hidden');
 
-    }, 2500);
+    }, 15000);
 
 
 
